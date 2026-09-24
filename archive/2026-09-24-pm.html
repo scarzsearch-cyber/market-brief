@@ -130,6 +130,13 @@ ul.cal li:last-child{border-bottom:0}
 .section-hint{font-size:var(--t1);color:var(--fg-subtle);font-weight:600}
 footer.fine{padding:16px 4px;font-size:var(--t1);color:var(--fg-subtle)}
 footer.fine a{display:inline-flex;align-items:center;min-height:var(--target-min);font-weight:700}
+@media (min-width:1200px){
+ .wrap:has(#decision){max-width:1280px;padding:20px 24px 56px}
+ main#content:has(>#decision){column-count:2;column-gap:16px}
+ main#content:has(>#decision)>section.card{break-inside:avoid;margin:0 0 16px;display:inline-block;width:100%}
+ main#content>#decision,main#content>#strategy{column-span:all;display:block}
+ main#content>#decision{margin-top:12px}
+}
 @media (max-width:650px){
  h1{font-size:var(--t6)}
  .gauges{grid-template-columns:1fr}
